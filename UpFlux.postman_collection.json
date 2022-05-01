@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5630abf2-aec6-4aa3-b871-43bf603b934d",
+		"_postman_id": "72ecfc71-d231-42ee-b772-b15cebf0ecfb",
 		"name": "UpFlux",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -12,7 +12,22 @@
 					"name": "FindBookAll",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://kvxyt8i2b8.execute-api.sa-east-1.amazonaws.com/dev/book",
+							"protocol": "https",
+							"host": [
+								"kvxyt8i2b8",
+								"execute-api",
+								"sa-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"book"
+							]
+						}
 					},
 					"response": []
 				},
@@ -20,7 +35,29 @@
 					"name": "FindBookByID",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://kvxyt8i2b8.execute-api.sa-east-1.amazonaws.com/dev/book/?book_id=20220501174645",
+							"protocol": "https",
+							"host": [
+								"kvxyt8i2b8",
+								"execute-api",
+								"sa-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"book",
+								""
+							],
+							"query": [
+								{
+									"key": "book_id",
+									"value": "20220501174645"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -28,7 +65,29 @@
 					"name": "FindBookByTitle",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://kvxyt8i2b8.execute-api.sa-east-1.amazonaws.com/dev/book/?title=365 Days",
+							"protocol": "https",
+							"host": [
+								"kvxyt8i2b8",
+								"execute-api",
+								"sa-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"book",
+								""
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "365 Days"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -209,10 +268,30 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "ReturnBookAvailable",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book_id\":20220501174645,\r\n    \"user\": \"VitorHG\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "https://kvxyt8i2b8.execute-api.sa-east-1.amazonaws.com/dev/book/loan",
+							"protocol": "https",
+							"host": [
+								"kvxyt8i2b8",
+								"execute-api",
+								"sa-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"book",
+								"loan"
+							]
+						}
 					},
 					"response": []
 				}
