@@ -39,5 +39,7 @@ Para efetuar testes da API siga as instruções abaixo:
 
 4- Após isso é só clicar em Import e será gerado um projeto no postMan com todas as rotas e exemplos.
 
+5- Da mesma forma o arquivo UpFluxAPI-dev-swagger.json pode ser importado para o PostMan
+
 
 OBS: Não deu tempo de implementar a parte do console para terminar o programa pois estive doente durante o desenvolvimento dessa atividade
