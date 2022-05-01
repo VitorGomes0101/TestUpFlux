@@ -5,7 +5,7 @@ API feita inteiramente na AWS, usando API Gateway, Lambda e banco de dados Dynam
 1- Para acessar a API acesse o https://010311306823.signin.aws.amazon.com/console
 
 
-2- Utilize o usuário UpFlux e senha UpFlux2022 para obter acesso
+2- Utilize o usuário enviado por email junto ao link do repositório
 
 
 3- No canto superior direito selecione em Regions a opção América do Sul (São Paulo) sa-east-1
